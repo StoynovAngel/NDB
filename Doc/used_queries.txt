@@ -1,0 +1,17 @@
+'use refinementDb'
+
+'db.sessions.insertOne({name: "Spring refinement 1", status:"IN_PROGRESS", participants: [{name:"Angel", role:"DEV"}, {name:"Simo", role:"DEV"}]})',
+
+db.sessions.find()
+
+db.createCollection("stories")
+
+db.stories.insertOne({sessionId: ObjectId('6994c21b616d90a4797c2907')})
+
+db.stories.updateOne({sessionId: ObjectId('6994c21b616d90a4797c2907')}, {$set: {externalKey: "JIRA-101", title: "Run LSR Lombok Recipes", round: 2, revealed: true, finalSize: "M"}})
+
+db.sessions.updateOne({_id: ObjectId("6994c21b616d90a4797c2907") }, { $unset: { id: "" }});
+
+db.sessions.updateOne({"participants.name": "Angel"}, {$set: {"participants.$.id":"p1"}})
+
+db.votes.insertOne({sessionId: ObjectId('6994c21b616d90a4797c2907'), storyId: ObjectId('6994c379616d90a4797c2908'), round:2, "participantId": "p1", value:"M"})

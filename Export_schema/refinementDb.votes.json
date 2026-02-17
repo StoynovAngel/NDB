@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "6994cdad616d90a4797c2909"
+  },
+  "sessionId": {
+    "$oid": "6994c21b616d90a4797c2907"
+  },
+  "storyId": {
+    "$oid": "6994c379616d90a4797c2908"
+  },
+  "round": 2,
+  "participantId": "p1",
+  "value": "M"
+}]

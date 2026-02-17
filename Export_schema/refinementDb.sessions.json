@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "6994c21b616d90a4797c2907"
+  },
+  "name": "Spring refinement 1",
+  "status": "IN_PROGRESS",
+  "participants": [
+    {
+      "name": "Angel",
+      "role": "DEV",
+      "id": "p1"
+    },
+    {
+      "name": "Simo",
+      "role": "DEV",
+      "id": "p2"
+    }
+  ]
+}]

@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6994c379616d90a4797c2908"
+  },
+  "sessionId": {
+    "$oid": "6994c21b616d90a4797c2907"
+  },
+  "externalKey": "JIRA-101",
+  "finalSize": "M",
+  "revealed": true,
+  "round": 2,
+  "title": "Run LSR Lombok Recipes"
+}]
