@@ -10,4 +10,121 @@
   "revealed": true,
   "round": 2,
   "title": "Run LSR Lombok Recipes"
+},
+{
+  "_id": {
+    "$oid": "6999d3cfa33e156ef07c2910"
+  },
+  "sessionId": {
+    "$oid": "6999d2f7a33e156ef07c2907"
+  },
+  "externalKey": "JIRA-102",
+  "finalSize": "L",
+  "revealed": true,
+  "round": 1,
+  "title": "Implement OpenRewrite Security Recipe"
+},
+{
+  "_id": {
+    "$oid": "6999d3cfa33e156ef07c2911"
+  },
+  "sessionId": {
+    "$oid": "6999d2f7a33e156ef07c2908"
+  },
+  "externalKey": "JIRA-103",
+  "finalSize": "S",
+  "revealed": false,
+  "round": 1,
+  "title": "Refactor XSSystemEnvironmentAccessor"
+},
+{
+  "_id": {
+    "$oid": "6999d3cfa33e156ef07c2912"
+  },
+  "sessionId": {
+    "$oid": "6999d2f7a33e156ef07c2909"
+  },
+  "externalKey": "JIRA-104",
+  "finalSize": "XL",
+  "revealed": true,
+  "round": 2,
+  "title": "Migrate spring-servlet.xml to Boot Config"
+},
+{
+  "_id": {
+    "$oid": "6999d3cfa33e156ef07c2913"
+  },
+  "sessionId": {
+    "$oid": "6999d2f7a33e156ef07c290a"
+  },
+  "externalKey": "JIRA-105",
+  "finalSize": "M",
+  "revealed": true,
+  "round": 3,
+  "title": "Add BlackDuck CTP Technical User"
+},
+{
+  "_id": {
+    "$oid": "6999d3cfa33e156ef07c2914"
+  },
+  "sessionId": {
+    "$oid": "6999d2f7a33e156ef07c290b"
+  },
+  "externalKey": "JIRA-106",
+  "finalSize": "XS",
+  "revealed": false,
+  "round": 1,
+  "title": "Fix Sonar Critical Code Smells"
+},
+{
+  "_id": {
+    "$oid": "6999d3cfa33e156ef07c2915"
+  },
+  "sessionId": {
+    "$oid": "6999d2f7a33e156ef07c290c"
+  },
+  "externalKey": "JIRA-107",
+  "finalSize": "L",
+  "revealed": true,
+  "round": 2,
+  "title": "Implement Role Cleanup for HANA"
+},
+{
+  "_id": {
+    "$oid": "6999d3cfa33e156ef07c2916"
+  },
+  "sessionId": {
+    "$oid": "6999d2f7a33e156ef07c290d"
+  },
+  "externalKey": "JIRA-108",
+  "finalSize": "M",
+  "revealed": true,
+  "round": 2,
+  "title": "Improve Jenkins Hyperspace Pipeline"
+},
+{
+  "_id": {
+    "$oid": "6999d3cfa33e156ef07c2917"
+  },
+  "sessionId": {
+    "$oid": "6999d2f7a33e156ef07c290e"
+  },
+  "externalKey": "JIRA-109",
+  "finalSize": "S",
+  "revealed": false,
+  "round": 1,
+  "title": "Upgrade Java 17 to 21 Compatibility"
+},
+{
+  "_id": {
+    "$oid": "6999d3cfa33e156ef07c2918"
+  },
+  "sessionId": {
+    "$oid": "6999d2f7a33e156ef07c290f"
+  },
+  "externalKey": "JIRA-110",
+  "finalSize": "XXL",
+  "revealed": true,
+  "round": 4,
+  "title": "Refactor UAA OAuth2 Flow for XSA"
 }]

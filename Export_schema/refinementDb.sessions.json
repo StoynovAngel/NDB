@@ -16,4 +16,265 @@
       "id": "p2"
     }
   ]
+},
+{
+  "_id": {
+    "$oid": "6999d2f7a33e156ef07c2907"
+  },
+  "name": "Spring refinement 2",
+  "status": "IN_PROGRESS",
+  "participants": [
+    {
+      "name": "Angel",
+      "role": "DEV",
+      "id": "p1"
+    },
+    {
+      "name": "Simo",
+      "role": "DEV",
+      "id": "p2"
+    },
+    {
+      "name": "Maria",
+      "role": "PO",
+      "id": "p3"
+    },
+    {
+      "name": "Georgi",
+      "role": "SCRUM_MASTER",
+      "id": "p4"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6999d2f7a33e156ef07c2908"
+  },
+  "name": "Spring refinement 3",
+  "status": "PLANNED",
+  "participants": [
+    {
+      "name": "Ivan",
+      "role": "DEV",
+      "id": "p5"
+    },
+    {
+      "name": "Petya",
+      "role": "DEV",
+      "id": "p6"
+    },
+    {
+      "name": "Maria",
+      "role": "PO",
+      "id": "p3"
+    },
+    {
+      "name": "Nikolay",
+      "role": "DM",
+      "id": "p7"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6999d2f7a33e156ef07c2909"
+  },
+  "name": "Spring refinement 4",
+  "status": "DONE",
+  "participants": [
+    {
+      "name": "Angel",
+      "role": "DEV",
+      "id": "p1"
+    },
+    {
+      "name": "Ivan",
+      "role": "DEV",
+      "id": "p5"
+    },
+    {
+      "name": "Georgi",
+      "role": "SCRUM_MASTER",
+      "id": "p4"
+    },
+    {
+      "name": "Elena",
+      "role": "PO",
+      "id": "p8"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6999d2f7a33e156ef07c290a"
+  },
+  "name": "Spring refinement 5",
+  "status": "IN_PROGRESS",
+  "participants": [
+    {
+      "name": "Simo",
+      "role": "DEV",
+      "id": "p2"
+    },
+    {
+      "name": "Petya",
+      "role": "DEV",
+      "id": "p6"
+    },
+    {
+      "name": "Elena",
+      "role": "PO",
+      "id": "p8"
+    },
+    {
+      "name": "Nikolay",
+      "role": "DM",
+      "id": "p7"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6999d2f7a33e156ef07c290b"
+  },
+  "name": "Spring refinement 6",
+  "status": "PLANNED",
+  "participants": [
+    {
+      "name": "Angel",
+      "role": "DEV",
+      "id": "p1"
+    },
+    {
+      "name": "Maria",
+      "role": "PO",
+      "id": "p3"
+    },
+    {
+      "name": "Georgi",
+      "role": "SCRUM_MASTER",
+      "id": "p4"
+    },
+    {
+      "name": "Nikolay",
+      "role": "DM",
+      "id": "p7"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6999d2f7a33e156ef07c290c"
+  },
+  "name": "Spring refinement 7",
+  "status": "IN_PROGRESS",
+  "participants": [
+    {
+      "name": "Ivan",
+      "role": "DEV",
+      "id": "p5"
+    },
+    {
+      "name": "Simo",
+      "role": "DEV",
+      "id": "p2"
+    },
+    {
+      "name": "Elena",
+      "role": "PO",
+      "id": "p8"
+    },
+    {
+      "name": "Georgi",
+      "role": "SCRUM_MASTER",
+      "id": "p4"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6999d2f7a33e156ef07c290d"
+  },
+  "name": "Spring refinement 8",
+  "status": "DONE",
+  "participants": [
+    {
+      "name": "Petya",
+      "role": "DEV",
+      "id": "p6"
+    },
+    {
+      "name": "Angel",
+      "role": "DEV",
+      "id": "p1"
+    },
+    {
+      "name": "Maria",
+      "role": "PO",
+      "id": "p3"
+    },
+    {
+      "name": "Nikolay",
+      "role": "DM",
+      "id": "p7"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6999d2f7a33e156ef07c290e"
+  },
+  "name": "Spring refinement 9",
+  "status": "PLANNED",
+  "participants": [
+    {
+      "name": "Ivan",
+      "role": "DEV",
+      "id": "p5"
+    },
+    {
+      "name": "Petya",
+      "role": "DEV",
+      "id": "p6"
+    },
+    {
+      "name": "Georgi",
+      "role": "SCRUM_MASTER",
+      "id": "p4"
+    },
+    {
+      "name": "Elena",
+      "role": "PO",
+      "id": "p8"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6999d2f7a33e156ef07c290f"
+  },
+  "name": "Spring refinement 10",
+  "status": "IN_PROGRESS",
+  "participants": [
+    {
+      "name": "Angel",
+      "role": "DEV",
+      "id": "p1"
+    },
+    {
+      "name": "Simo",
+      "role": "DEV",
+      "id": "p2"
+    },
+    {
+      "name": "Maria",
+      "role": "PO",
+      "id": "p3"
+    },
+    {
+      "name": "Nikolay",
+      "role": "DM",
+      "id": "p7"
+    }
+  ]
 }]

@@ -2,13 +2,406 @@
   "_id": {
     "$oid": "6994cdad616d90a4797c2909"
   },
-  "sessionId": {
-    "$oid": "6994c21b616d90a4797c2907"
-  },
   "storyId": {
     "$oid": "6994c379616d90a4797c2908"
   },
   "round": 2,
   "participantId": "p1",
   "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2919"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2910"
+  },
+  "round": 1,
+  "participantId": "p1",
+  "value": "L"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c291a"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2910"
+  },
+  "round": 1,
+  "participantId": "p2",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c291b"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2910"
+  },
+  "round": 1,
+  "participantId": "p3",
+  "value": "L"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c291c"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2910"
+  },
+  "round": 1,
+  "participantId": "p4",
+  "value": "XL"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c291d"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2911"
+  },
+  "round": 1,
+  "participantId": "p5",
+  "value": "S"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c291e"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2911"
+  },
+  "round": 1,
+  "participantId": "p6",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c291f"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2911"
+  },
+  "round": 1,
+  "participantId": "p3",
+  "value": "S"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2920"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2911"
+  },
+  "round": 1,
+  "participantId": "p7",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2921"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2912"
+  },
+  "round": 2,
+  "participantId": "p1",
+  "value": "XL"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2922"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2912"
+  },
+  "round": 2,
+  "participantId": "p5",
+  "value": "L"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2923"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2912"
+  },
+  "round": 2,
+  "participantId": "p4",
+  "value": "XL"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2924"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2912"
+  },
+  "round": 2,
+  "participantId": "p8",
+  "value": "L"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2925"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2913"
+  },
+  "round": 3,
+  "participantId": "p2",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2926"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2913"
+  },
+  "round": 3,
+  "participantId": "p6",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2927"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2913"
+  },
+  "round": 3,
+  "participantId": "p8",
+  "value": "L"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2928"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2913"
+  },
+  "round": 3,
+  "participantId": "p7",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2929"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2914"
+  },
+  "round": 1,
+  "participantId": "p1",
+  "value": "XS"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c292a"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2914"
+  },
+  "round": 1,
+  "participantId": "p3",
+  "value": "S"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c292b"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2914"
+  },
+  "round": 1,
+  "participantId": "p4",
+  "value": "XS"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c292c"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2914"
+  },
+  "round": 1,
+  "participantId": "p7",
+  "value": "S"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c292d"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2915"
+  },
+  "round": 2,
+  "participantId": "p5",
+  "value": "L"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c292e"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2915"
+  },
+  "round": 2,
+  "participantId": "p2",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c292f"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2915"
+  },
+  "round": 2,
+  "participantId": "p8",
+  "value": "L"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2930"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2915"
+  },
+  "round": 2,
+  "participantId": "p4",
+  "value": "XL"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2931"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2916"
+  },
+  "round": 2,
+  "participantId": "p6",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2932"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2916"
+  },
+  "round": 2,
+  "participantId": "p1",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2933"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2916"
+  },
+  "round": 2,
+  "participantId": "p3",
+  "value": "L"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2934"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2916"
+  },
+  "round": 2,
+  "participantId": "p7",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2935"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2917"
+  },
+  "round": 1,
+  "participantId": "p5",
+  "value": "S"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2936"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2917"
+  },
+  "round": 1,
+  "participantId": "p6",
+  "value": "S"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2937"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2917"
+  },
+  "round": 1,
+  "participantId": "p4",
+  "value": "M"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2938"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2917"
+  },
+  "round": 1,
+  "participantId": "p8",
+  "value": "S"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c2939"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2918"
+  },
+  "round": 4,
+  "participantId": "p1",
+  "value": "XXL"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c293a"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2918"
+  },
+  "round": 4,
+  "participantId": "p2",
+  "value": "XL"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c293b"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2918"
+  },
+  "round": 4,
+  "participantId": "p3",
+  "value": "XXL"
+},
+{
+  "_id": {
+    "$oid": "6999d50ca33e156ef07c293c"
+  },
+  "storyId": {
+    "$oid": "6999d3cfa33e156ef07c2918"
+  },
+  "round": 4,
+  "participantId": "p7",
+  "value": "XL"
 }]
