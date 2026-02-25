@@ -15,3 +15,211 @@ db.sessions.updateOne({_id: ObjectId("6994c21b616d90a4797c2907") }, { $unset: { 
 db.sessions.updateOne({"participants.name": "Angel"}, {$set: {"participants.$.id":"p1"}})
 
 db.votes.insertOne({sessionId: ObjectId('6994c21b616d90a4797c2907'), storyId: ObjectId('6994c379616d90a4797c2908'), round:2, "participantId": "p1", value:"M"})
+
+db.sessions.find({}, {status: "IN_PROGRESS", name: 1, _id: 0})
+
+db.sessions.find({}, {status: "IN_PROGRESS", name: 1, _id: 0})
+[
+  { name: 'Spring refinement 1', status: 'IN_PROGRESS' },
+  { name: 'Spring refinement 2', status: 'IN_PROGRESS' },
+  { name: 'Spring refinement 3', status: 'IN_PROGRESS' },
+  { name: 'Spring refinement 4', status: 'IN_PROGRESS' },
+  { name: 'Spring refinement 5', status: 'IN_PROGRESS' },
+  { name: 'Spring refinement 6', status: 'IN_PROGRESS' },
+  { name: 'Spring refinement 7', status: 'IN_PROGRESS' },
+  { name: 'Spring refinement 8', status: 'IN_PROGRESS' },
+  { name: 'Spring refinement 9', status: 'IN_PROGRESS' },
+  { name: 'Spring refinement 10', status: 'IN_PROGRESS' }
+]
+
+ db.sessions.find({"participants.name": "Angel"}, {participants: {$elemMatch: {name: "Angel"}}, _id:0})
+[
+  { participants: [ { name: 'Angel', role: 'DEV', id: 'p1' } ] },
+  { participants: [ { name: 'Angel', role: 'DEV', id: 'p1' } ] },
+  { participants: [ { name: 'Angel', role: 'DEV', id: 'p1' } ] },
+  { participants: [ { name: 'Angel', role: 'DEV', id: 'p1' } ] },
+  { participants: [ { name: 'Angel', role: 'DEV', id: 'p1' } ] },
+  { participants: [ { name: 'Angel', role: 'DEV', id: 'p1' } ] }
+]
+
+refinementDb> db.votes.find({round: {$gt: 3}})
+[
+  {
+    _id: ObjectId('6999d50ca33e156ef07c2939'),
+    storyId: ObjectId('6999d3cfa33e156ef07c2918'),
+    round: 4,
+    participantId: 'p1',
+    value: 'XXL'
+  },
+  {
+    _id: ObjectId('6999d50ca33e156ef07c293a'),
+    storyId: ObjectId('6999d3cfa33e156ef07c2918'),
+    round: 4,
+    participantId: 'p2',
+    value: 'XL'
+  },
+  {
+    _id: ObjectId('6999d50ca33e156ef07c293b'),
+    storyId: ObjectId('6999d3cfa33e156ef07c2918'),
+    round: 4,
+    participantId: 'p3',
+    value: 'XXL'
+  },
+  {
+    _id: ObjectId('6999d50ca33e156ef07c293c'),
+    storyId: ObjectId('6999d3cfa33e156ef07c2918'),
+    round: 4,
+    participantId: 'p7',
+    value: 'XL'
+  }
+]
+
+refinementDb> db.votes.find({value: {$regex: "L"}}, {value: 1})
+[
+  { _id: ObjectId('6999d50ca33e156ef07c2919'), value: 'L' },
+  { _id: ObjectId('6999d50ca33e156ef07c291b'), value: 'L' },
+  { _id: ObjectId('6999d50ca33e156ef07c291c'), value: 'XL' },
+  { _id: ObjectId('6999d50ca33e156ef07c2921'), value: 'XL' },
+  { _id: ObjectId('6999d50ca33e156ef07c2922'), value: 'L' },
+  { _id: ObjectId('6999d50ca33e156ef07c2923'), value: 'XL' },
+  { _id: ObjectId('6999d50ca33e156ef07c2924'), value: 'L' },
+  { _id: ObjectId('6999d50ca33e156ef07c2927'), value: 'L' },
+  { _id: ObjectId('6999d50ca33e156ef07c292d'), value: 'L' },
+  { _id: ObjectId('6999d50ca33e156ef07c292f'), value: 'L' },
+  { _id: ObjectId('6999d50ca33e156ef07c2930'), value: 'XL' },
+  { _id: ObjectId('6999d50ca33e156ef07c2933'), value: 'L' },
+  { _id: ObjectId('6999d50ca33e156ef07c2939'), value: 'XXL' },
+  { _id: ObjectId('6999d50ca33e156ef07c293a'), value: 'XL' },
+  { _id: ObjectId('6999d50ca33e156ef07c293b'), value: 'XXL' },
+  { _id: ObjectId('6999d50ca33e156ef07c293c'), value: 'XL' }
+]
+
+refinementDb> db.votes.updateOne({_id: ObjectId('6994cdad616d90a4797c2909')}, {$inc: {round: 1}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+refinementDb> db.sessions.updateOne({_id: ObjectId('6999d2f7a33e156ef07c290f')}, {$push: {participants: {name: "Ivaylo", role:"SCRUM Master", id:"p5"}}})
+
+{
+    _id: ObjectId('6999d2f7a33e156ef07c290f'),
+    name: 'Spring refinement 10',
+    status: 'IN_PROGRESS',
+    participants: [
+      { name: 'Angel', role: 'DEV', id: 'p1' },
+      { name: 'Simo', role: 'DEV', id: 'p2' },
+      { name: 'Maria', role: 'PO', id: 'p3' },
+      { name: 'Nikolay', role: 'DM', id: 'p7' },
+      { name: 'Ivaylo', role: 'SCRUM Master', id: 'p5' }
+    ]
+  }
+
+refinementDb> db.sessions.updateOne({_id: ObjectId('6999d2f7a33e156ef07c290f')}, {$pull: {participants: {name: "Simo"}}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+{
+    _id: ObjectId('6999d2f7a33e156ef07c290f'),
+    name: 'Spring refinement 10',
+    status: 'IN_PROGRESS',
+    participants: [
+      { name: 'Angel', role: 'DEV', id: 'p1' },
+      { name: 'Maria', role: 'PO', id: 'p3' },
+      { name: 'Nikolay', role: 'DM', id: 'p7' },
+      { name: 'Ivaylo', role: 'SCRUM Master', id: 'p5' }
+    ]
+  }
+
+db.votes.aggregate([ { $group: { _id: "$round", total: {$sum: 1} }}, {$sort: {_id: 1}}])
+[
+  { _id: null, total: 1 },
+  { _id: 1, total: 15 },
+  { _id: 2, total: 13 },
+  { _id: 3, total: 5 },
+  { _id: 4, total: 4 }
+]
+
+db.stories.aggregate([
+|   {
+|     $lookup: {
+|       from: "votes",
+|       localField: "_id",
+|       foreignField: "storyId",
+|       as: "votes"
+|     }
+|   },
+|   {
+|     $project: {
+|       _id: 0,
+|       title: 1,
+|       externalKey: 1,
+|       finalSize: 1,
+|       round: 1,
+|       votes: {
+|         round: 1,
+|         participantId: 1,
+|         value: 1
+|       }
+|     }
+|   }
+| ])
+[
+  {
+    externalKey: 'JIRA-101',
+    finalSize: 'M',
+    round: 2,
+    title: 'Run LSR Lombok Recipes',
+    votes: [ { round: 3, participantId: 'p1', value: 'M' } ]
+  },
+  {
+    externalKey: 'JIRA-102',
+    finalSize: 'L',
+    round: 1,
+    title: 'Implement OpenRewrite Security Recipe',
+    votes: [
+      { round: 1, participantId: 'p1', value: 'L' },
+      { round: 1, participantId: 'p2', value: 'M' },
+      { round: 1, participantId: 'p3', value: 'L' },
+      { round: 1, participantId: 'p4', value: 'XL' }
+    ]
+  },
+
+db.createRole({ role: "reader", privileges: [{resource: {db: "refinementDb", collection: "stories"}, actions: ["find"]}, {resource: {db: "refinementDb", collection: "votes"}, actions: ["find"]}], roles: []})
+
+db.createRole({ role: "writer", privileges: [{resource: {db: "refinementDb", collection: "stories"}, actions: ["find", "insert", "update", "remove"]}, {resource: {db: "refinementDb", collection: "votes"}, actions: ["find", "insert", "update", "remove"]}], roles: []})
+{ ok: 1 }
+
+db.createUser({
+  user: "devUser",
+  pwd: "dev123",
+  roles: [
+    { role: "refinementReader", db: "refinementDb" }
+  ]
+})
+
+ db.createUser({ user: "DB_ADMIN", pwd: "Abcd1234", roles: [{ role: "reader", db: "refinementDb" }] })
+db.createUser({ user: "XSADMIN", pwd: "Abcd1234", roles: [{ role: "writer", db: "refinementDb" }] })
+
+mongosh -u DB_ADMIN -p Abcd1234 --authenticationDatabase refinementDb
+mongosh -u XSADMIN -p Abcd1234 --authenticationDatabase refinementDb
+
+refinementDb> db.votes.insertOne({ value: "L" })
+MongoServerError[Unauthorized]: not authorized on refinementDb to execute command { insert: "votes", documents: [ { value: "L", _id: ObjectId('699f55f570be7f5ce67c2907') } ], ordered: true, lsid: { id: UUID("1933521f-5f05-4cb3-82e2-ab7a6d8ce333") }, $db: "refinementDb" }
+
+switched to db refinementDb
+refinementDb> db.votes.insertOne({ value: "TEST_TO_SEE_PERMISSIONS" })
+{
+  acknowledged: true,
+  insertedId: ObjectId('699f5632f52dc19e837c2907')
+}
+refinementDb>
+
