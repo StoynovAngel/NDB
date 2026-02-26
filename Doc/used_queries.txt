@@ -149,30 +149,30 @@ db.votes.aggregate([ { $group: { _id: "$round", total: {$sum: 1} }}, {$sort: {_i
 ]
 
 db.stories.aggregate([
-|   {
-|     $lookup: {
-|       from: "votes",
-|       localField: "_id",
-|       foreignField: "storyId",
-|       as: "votes"
-|     }
-|   },
-|   {
-|     $project: {
-|       _id: 0,
-|       title: 1,
-|       externalKey: 1,
-|       finalSize: 1,
-|       round: 1,
-|       votes: {
-|         round: 1,
-|         participantId: 1,
-|         value: 1
-|       }
-|     }
-|   }
-| ])
-[
+   {
+     $lookup: {
+       from: "votes",
+       localField: "_id",
+       foreignField: "storyId",
+       as: "votes"
+     }
+   },
+   {
+     $project: {
+       _id: 0,
+       title: 1,
+       externalKey: 1,
+       finalSize: 1,
+       round: 1,
+       votes: {
+         round: 1,
+         participantId: 1,
+         value: 1
+       }
+	 }
+	}
+])
+
   {
     externalKey: 'JIRA-101',
     finalSize: 'M',
